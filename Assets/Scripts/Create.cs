@@ -1,6 +1,6 @@
 // UMD IMDM290 
 // Instructor: Myungin Lee
-// This tutorial introduce a way to draw spheres and align them in a circle with colors.
+// This tutorial introduces a way to draw spheres and align them in a circle with colors.
 
 using System.Collections;
 using System.Collections.Generic;
@@ -8,15 +8,15 @@ using UnityEngine;
 
 public class Create : MonoBehaviour
 {
-    GameObject[] spheres;
-    static int numSphere = 100; 
+    GameObject[] spheres; //array to hold our spheres
+    static int numSphere = 100; //number of spheres we wanna create
     float time = 0f;
-    Vector3[] initPos;
+    Vector3[] initPos; 
     // Start is called before the first frame update
     void Start()
     {
-        spheres = new GameObject[numSphere];
-        initPos = new Vector3[numSphere];
+        spheres = new GameObject[numSphere]; //creating a reference for 100 gameObjects
+        initPos = new Vector3[numSphere]; //creating a reference for each sphere's initial position
         
         foreach (GameObject sphere in spheres){
             // sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
