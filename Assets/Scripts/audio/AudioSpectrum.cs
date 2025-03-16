@@ -23,7 +23,7 @@ public class AudioSpectrum : MonoBehaviour
         // The source (time domain) transforms into samples in frequency domain 
         source.GetSpectrumData(samples, 0, FFTWindow.Hanning);
         // Empty first, and pull down the value.
-        // audioAmp = 0f;
+        audioAmp = 0f;
         for (int i = 0; i < FFTSIZE; i++)
         {
             audioAmp += samples[i];
